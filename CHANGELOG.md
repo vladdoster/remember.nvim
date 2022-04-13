@@ -1,3 +1,14 @@
+# [1.1.0](https://github.com/vladdoster/remember.nvim/compare/v1.0.2...v1.1.0) (2022-04-13)
+
+
+### fix
+
+* add `maint` commit prefix to release rules ([8ab8496](https://github.com/vladdoster/remember.nvim/commit/8ab8496da38747479ca9a2608982bcb7f8ab2b56))
+
+### maint
+
+* update release commit message ([aae7155](https://github.com/vladdoster/remember.nvim/commit/aae7155459c1714673999bf98a680a6b8de66002))
+
 ## [1.0.2](https://github.com/vladdoster/remember.nvim/compare/v1.0.1...v1.0.2) (2022-04-13)
 
 

@@ -18,7 +18,7 @@
           {
             "files": ["VERSION"],
             "from": "^(v[0-9]).+([0-9]).+([0-9])?$",
-            "to": "${nextRelease.version}",
+            "to": "v${nextRelease.version}",
             "results": [ { "file": "VERSION", "hasChanged": true }
             ]
           }
@@ -29,7 +29,7 @@
     ["@semantic-release/changelog", { "changelogFile": "CHANGELOG.md" } ],
     ["@semantic-release/git", {
         "assets": ["CHANGELOG.md", "VERSION"],
-        "message": "release: v${lastRelease.version} → v${nextRelease.version}\n\n${nextRelease.notes}"
+        "message": "release: ${{lastRelease.version || 'v0.0.0' }} → ${nextRelease.version}\n\n${nextRelease.notes}"
       }
     ],
     "@semantic-release/github"

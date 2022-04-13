@@ -16,10 +16,12 @@
     ["@google/semantic-release-replace-plugin", {
         "replacements": [
           {
-            "files": ["VERSION"],
+            "files": ["README.md", "VERSION"],
             "from": "^([v]?[0-9]).+([0-9]).+([0-9])?$",
             "to": "v${nextRelease.version}",
-            "results": [ { "file": "VERSION", "hasChanged": true }
+            "results": [
+                { "file": "README.md", "hasChanged": true},
+                { "file": "VERSION", "hasChanged": true}
             ]
           }
         ]
@@ -28,7 +30,7 @@
     ["@semantic-release/release-notes-generator", { "preset": "eslint" }],
     ["@semantic-release/changelog", { "changelogFile": "CHANGELOG.md" } ],
     ["@semantic-release/git", {
-        "assets": ["CHANGELOG.md", "VERSION"],
+        "assets": ["CHANGELOG.md", "VERSION", "README.md"],
         "message": "release: ${lastRelease.version || 'v0.0.0' } → ${nextRelease.version}\n\n${nextRelease.notes}"
       }
     ],

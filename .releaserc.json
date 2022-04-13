@@ -31,7 +31,7 @@
     ["@semantic-release/changelog", { "changelogFile": "CHANGELOG.md" } ],
     ["@semantic-release/git", {
         "assets": ["CHANGELOG.md", "VERSION", "README.md"],
-        "message": "release: ${lastRelease.version || 'v0.0.0' } → ${nextRelease.version}\n\n${nextRelease.notes}"
+        "message": "release: v${lastRelease.version || '0.0.0' } → v${nextRelease.version}\n\n${nextRelease.notes}"
       }
     ],
     "@semantic-release/github"

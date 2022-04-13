@@ -1,6 +1,6 @@
 # remember.nvim
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/vladdoster/remember.nvim)
 
 A port of the Vim plugin
 [vim-lastplace](https://github.com/farmergreg/vim-lastplace). It uses the same

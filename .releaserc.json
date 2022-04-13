@@ -17,7 +17,7 @@
         "replacements": [
           {
             "files": ["README.md", "VERSION"],
-            "from": "^([v]?[0-9]).+([0-9]).+([0-9])?$",
+            "from": "([v]?[0-9]).+([0-9]).+([0-9])",
             "to": "v${nextRelease.version}",
             "results": [
                 { "file": "README.md", "hasChanged": true},

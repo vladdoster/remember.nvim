@@ -1,0 +1,46 @@
+*remember.txt*	Nvim
+
+
+		  remember.nvim    by Vladislav Doster
+
+
+Help on remember.vim                                            *remember*
+
+1. Intro                        |remember-intro|
+2. Settings                     |remember-settings|
+
+==============================================================================
+1. Intro                                                        *remember-intro*
+
+This is a Neovim version of the Vim plugin vim-lastplace. It uses the same
+logic as vim-lastplace but also as much as possible the Neovim Lua API.
+
+It's called remember because it remembers where you were last before exiting a
+file.
+
+When opening a file the plugin will set the cursor position to the edit
+position instead of top of the file. It ignores commit messages and certain
+buffer types.
+
+==============================================================================
+2. Settings                                                     *remember-settings*
+~
+                      *g:remember.ignore_buftype*
+`g:remember.ignore_buftype`     boolean         (default v:true)
+
+  Enable/disable current/total tabpages indicator (top right corner).
+
+
+                      *g:ignore_filetype*
+`g:remember.ignore_filetype`    boolean         (default v:true)
+
+  Enable/disable auto-hiding the tab bar when there is a single buffer.
+
+
+                      *g:remember.open_folds*
+`g:remember.open_folds`         boolean         (default v:false)
+
+  Enable/disable auto-hiding the tab bar when there is a single buffer.
+
+
+vim:tw=78:ts=8:noet:ft=help:norl:

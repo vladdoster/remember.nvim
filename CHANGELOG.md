@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/vladdoster/remember.nvim/compare/v1.1.0...v1.1.1) (2022-04-13)
+
+
+### docs
+
+* add MIT license ([0007c6c](https://github.com/vladdoster/remember.nvim/commit/0007c6c8721f5c3abfb0309fa3f3f51362dcc742))
+
 # [1.1.0](https://github.com/vladdoster/remember.nvim/compare/v1.0.2...v1.1.0) (2022-04-13)
 
 

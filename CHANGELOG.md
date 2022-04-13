@@ -1,3 +1,17 @@
+## [1.0.2](https://github.com/vladdoster/remember.nvim/compare/v1.0.1...v1.0.2) (2022-04-13)
+
+
+### docs
+
+* add current version link to README.md ([6193772](https://github.com/vladdoster/remember.nvim/commit/619377285c0b90413c41aa5e4c525c91e7de4306))
+* update release version badge in README.md ([1ea2362](https://github.com/vladdoster/remember.nvim/commit/1ea23622d7537981f6f370862eb0e5e3d80f4e5d))
+
+### fix
+
+* release badge URL ([5ad34c9](https://github.com/vladdoster/remember.nvim/commit/5ad34c9d01fd566d46095597762ae8a9be3fabd4))
+* version regex ([1927f5c](https://github.com/vladdoster/remember.nvim/commit/1927f5c7cd6e8fa5e1ed5de25dfbf231a29689f9))
+* version replacement checks ([64096a1](https://github.com/vladdoster/remember.nvim/commit/64096a135024540829ead8280f6a090798cab10f))
+
 ## [1.0.1](https://github.com/vladdoster/remember.nvim/compare/v1.0.0...v1.0.1) (2022-04-13)
 
 

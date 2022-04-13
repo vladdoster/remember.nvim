@@ -1,5 +1,5 @@
 {
-  "repositoryUrl": "https://github.com/vladdoster/versioned-repository-boilerplate",
+  "repositoryUrl": "https://github.com/vladdoster/remember.nvim",
   "plugins": [
     ["@semantic-release/commit-analyzer", {
       "preset": "eslint",

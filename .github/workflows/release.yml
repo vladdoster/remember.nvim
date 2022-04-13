@@ -1,0 +1,29 @@
+name: Release
+on:
+  workflow_dispatch:
+jobs:
+  release:
+    name: release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          cache-dependency-path: '**/.github/workflows/release.yml'
+          cache: 'npm'
+          check-latest: true
+          node-version: '16'
+      - name: Fetch dependencies
+        run: |
+          npm install --no-package-lock \
+            @google/semantic-release-replace-plugin \
+            @semantic-release/changelog @semantic-release/git \
+            conventional-changelog-eslint
+      - name: Generate release
+        run: npx semantic-release --ci --
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_TOKEN }}
+          GIT_AUTHOR_EMAIL: 'mvdoster@gmail.com'
+          GIT_AUTHOR_NAME: 'Vladislav Doster'
+          GIT_COMMITTER_EMAIL: 'mvdoster@gmail.com'
+          GIT_COMMITTER_NAME: 'Vladislav Doster'

@@ -10,6 +10,7 @@
         {"tag": "fix",    "release": "patch"},
         {"tag": "new",    "release": "minor"},
         {"tag": "init",   "release": "major"},
+        {"tag": "maint",  "release": "minor"},
         {"tag": "update", "release": "minor"}
       ]
     }],

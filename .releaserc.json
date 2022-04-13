@@ -9,6 +9,7 @@
         {"tag": "docs",   "release": "patch"},
         {"tag": "fix",    "release": "patch"},
         {"tag": "new",    "release": "minor"},
+        {"tag": "init",   "release": "major"},
         {"tag": "update", "release": "minor"}
       ]
     }],

@@ -87,7 +87,6 @@ function set_cursor_position()
   end
 end
 
-local api = vim.api
 api.nvim_create_autocmd({ "BufWinEnter" }, {
   callback = function()
     set_cursor_position()

@@ -1,3 +1,14 @@
+# [1.2.0](https://github.com/vladdoster/remember.nvim/compare/v1.1.1...v1.2.0) (2022-05-09)
+
+
+### maint
+
+* remove duplicate api variable ([da16c53](https://github.com/vladdoster/remember.nvim/commit/da16c53a918232415390a99db51a4e9726203662))
+
+### style
+
+* fmt remember.lua with stylua ([fbcfb08](https://github.com/vladdoster/remember.nvim/commit/fbcfb08646349fb5e15e4d6aeac67d3edf69da8e))
+
 ## [1.1.1](https://github.com/vladdoster/remember.nvim/compare/v1.1.0...v1.1.1) (2022-04-13)
 
 

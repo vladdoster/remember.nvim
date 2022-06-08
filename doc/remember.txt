@@ -32,6 +32,7 @@ messages and certain buffer types.
 To use remember with default configuration, import the module.
 
 Example: >
+
     -- Using Packer
     use({ 'vladdoster/remember.nvim', config = [[ require('remember') ]] })
 
@@ -58,7 +59,7 @@ g:remember_ignore_buftype                           *g:remember_ignore_buftype*
     Ignored if the value is an empty list.
 
     Default: [                                                               ~
-        "help",
+        "help",                                                              ~
         "nofile",                                                            ~
         "quickfix",                                                          ~
     ]                                                                        ~
@@ -74,10 +75,10 @@ g:remember_ignore_filetype                        *g:remember_ignore_filetype*
     Ignored if the value is an empty list.
 
     Default: [                                                               ~
-        "gitcommit",
-        "gitrebase",
-        "hgcommit"
-        "svn",
+        "gitcommit",                                                         ~
+        "gitrebase",                                                         ~
+        "hgcommit"                                                           ~
+        "svn",                                                               ~
     ]                                                                        ~
 
     Example: >
@@ -97,6 +98,10 @@ g:remember_open_folds                                  *g:remember_open_folds*
 
 ==============================================================================
  4. CHANGELOG                                             *remember-changelog*
+
+1.2.4
+
+ - fix documentation example formatting
 
 1.2.3
 

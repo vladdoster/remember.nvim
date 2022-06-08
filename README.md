@@ -21,8 +21,11 @@ Uses new Neovim `0.7` Lua `vim.nvim.create_autocmd` function.
 ### Packer
 
 ```Lua 
-use { 'vladdoster/remember.nvim' } 
+-- Using Packer
+use({ 'vladdoster/remember.nvim', config = [[ require('remember') ]] })
 ```
+
+For the full documentation, see [remember.txt](docs/remember.txt).
 
 ## Issues
 

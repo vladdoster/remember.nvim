@@ -1,3 +1,14 @@
+## [1.2.3](https://github.com/vladdoster/remember.nvim/compare/v1.2.2...v1.2.3) (2022-06-08)
+
+
+### docs
+
+* update changelog in plugin documentation ([793135c](https://github.com/vladdoster/remember.nvim/commit/793135c42b238ec08ffb08c69c3d7551ea944109))
+
+### fix
+
+* correct plugin version (1.3.0 -> 1.2.3) in remember.txt ([b56bf25](https://github.com/vladdoster/remember.nvim/commit/b56bf25bddbbb8876678476d04e91ec6eaf8a871))
+
 ## [1.2.2](https://github.com/vladdoster/remember.nvim/compare/v1.2.1...v1.2.2) (2022-06-08)
 
 

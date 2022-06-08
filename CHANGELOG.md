@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/vladdoster/remember.nvim/compare/v1.2.3...v1.2.4) (2022-06-08)
+
+
+### docs
+
+* fix documentation example formatting ([bb62e15](https://github.com/vladdoster/remember.nvim/commit/bb62e1585733063fa9ad9790e1678ff364c1f5ce))
+
 ## [1.2.3](https://github.com/vladdoster/remember.nvim/compare/v1.2.2...v1.2.3) (2022-06-08)
 
 

@@ -25,7 +25,7 @@ Uses new Neovim `0.7` Lua `vim.nvim.create_autocmd` function.
 use({ 'vladdoster/remember.nvim', config = [[ require('remember') ]] })
 ```
 
-For the full documentation, see [remember.txt](docs/remember.txt).
+For the full documentation, see [remember.txt](doc/remember.txt).
 
 ## Issues
 

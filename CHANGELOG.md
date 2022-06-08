@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/vladdoster/remember.nvim/compare/v1.2.1...v1.2.2) (2022-06-08)
+
+
+### docs
+
+* update usage code snippet in README.md  ([ec99360](https://github.com/vladdoster/remember.nvim/commit/ec993607c4b32a3b28ac3e266fd782fe2cb10c55))
+
 ## [1.2.1](https://github.com/vladdoster/remember.nvim/compare/v1.2.0...v1.2.1) (2022-06-08)
 
 

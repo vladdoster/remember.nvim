@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/vladdoster/remember.nvim/compare/v1.2.0...v1.2.1) (2022-06-08)
+
+
+### docs
+
+* fix variable descriptions & add setup info ([84ee6de](https://github.com/vladdoster/remember.nvim/commit/84ee6de56b256ae4fdf6a9a0881161f2deb40987))
+
 # [1.2.0](https://github.com/vladdoster/remember.nvim/compare/v1.1.1...v1.2.0) (2022-05-09)
 
 

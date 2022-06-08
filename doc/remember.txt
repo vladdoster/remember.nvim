@@ -98,11 +98,20 @@ g:remember_open_folds                                  *g:remember_open_folds*
 ==============================================================================
  4. CHANGELOG                                             *remember-changelog*
 
-1.3.0
+1.2.3
 
-  - correct variable descriptions
-  - add setup section
-  - add changelog section
+  - update changelog in plugin documentation
+
+1.2.2
+
+  - add link to full documentation in README.md
+  - fix one-liner install code snippet in README.md
+
+1.2.1
+
+  - correct the descriptions & add examples for options
+  - document how to use & configure
+  - add changelog to documentation
 
 1.2.0
 

@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/vladdoster/remember.nvim/compare/v1.2.4...v1.2.5) (2022-06-08)
+
+
+### fix
+
+* correct version (1.2.3 -> 1.2.5) in remember.txt ([e63e108](https://github.com/vladdoster/remember.nvim/commit/e63e1088150aaf3180035eb1efabb1bc4b8dfc6e))
+
 ## [1.2.4](https://github.com/vladdoster/remember.nvim/compare/v1.2.3...v1.2.4) (2022-06-08)
 
 

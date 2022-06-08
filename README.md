@@ -2,7 +2,7 @@
 
 | version                                                                |
 | :--------------------------------------------------------------------: |
-| [v1.2.4](https://github.com/vladdoster/remember.nvim/releases)         |
+| [v1.2.5](https://github.com/vladdoster/remember.nvim/releases)         |
 
 A port of the Vim plugin
 [vim-lastplace](https://github.com/farmergreg/vim-lastplace). It uses the same

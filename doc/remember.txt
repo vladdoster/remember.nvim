@@ -2,7 +2,7 @@
 
 
 Author: Vladislav Doster <mvdoster@gmail.com>
-Version: 1.2.5
+Version: v1.3.0
 
 ==============================================================================
 CONTENTS                                                            *remember*
@@ -99,44 +99,44 @@ g:remember_open_folds                                  *g:remember_open_folds*
 ==============================================================================
  4. CHANGELOG                                             *remember-changelog*
 
-1.2.5
+v1.3.0
 
   - bump version in documentation
 
-1.2.4
+v1.3.0
 
  - fix documentation example formatting
 
-1.2.3
+v1.3.0
 
   - update changelog in plugin documentation
 
-1.2.2
+v1.3.0
 
   - add link to full documentation in README.md
   - fix one-liner install code snippet in README.md
 
-1.2.1
+v1.3.0
 
   - correct the descriptions & add examples for options
   - document how to use & configure
   - add changelog to documentation
 
-1.2.0
+v1.3.0
 
   - remove duplicate api variable
   - fmt remember.lua with stylua
 
-1.1.1
+v1.3.0
 
   - add MIT license
 
-1.1.0
+v1.3.0
 
   - add `maint` commit prefix to release rules
   - update release commit message
 
-1.0.2
+v1.3.0
 
   - add current version link to README.md
   - update release version badge in README.md
@@ -144,13 +144,13 @@ g:remember_open_folds                                  *g:remember_open_folds*
   - version regex
   - version replacement checks
 
-1.0.1
+v1.3.0
 
   - release commit message
   - release message variable brackets
   - release version regex
 
-1.0.0
+v1.3.0
 
   - create remember.nvim and documentation
 

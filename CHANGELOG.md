@@ -1,3 +1,14 @@
+# [1.3.0](https://github.com/vladdoster/remember.nvim/compare/v1.2.5...v1.3.0) (2022-06-08)
+
+
+### fix
+
+* broken link to documentation in README.md ([7120ac4](https://github.com/vladdoster/remember.nvim/commit/7120ac4c7fb554eed47eddb778a7377ab78925a3))
+
+### maint
+
+* releases bump version in remember.txt ([a6eeb51](https://github.com/vladdoster/remember.nvim/commit/a6eeb51c7d7f01f3053e91965f77b197c9ac0a37))
+
 ## [1.2.5](https://github.com/vladdoster/remember.nvim/compare/v1.2.4...v1.2.5) (2022-06-08)
 
 

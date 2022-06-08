@@ -2,7 +2,7 @@
 
 
 Author: Vladislav Doster <mvdoster@gmail.com>
-Version: 1.2.3
+Version: 1.2.5
 
 ==============================================================================
 CONTENTS                                                            *remember*
@@ -98,6 +98,10 @@ g:remember_open_folds                                  *g:remember_open_folds*
 
 ==============================================================================
  4. CHANGELOG                                             *remember-changelog*
+
+1.2.5
+
+  - bump version in documentation
 
 1.2.4
 

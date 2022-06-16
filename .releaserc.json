@@ -23,15 +23,15 @@
             "release": "patch"
           },
           {
-            "tag": "new",
-            "release": "minor"
-          },
-          {
             "tag": "init",
             "release": "major"
           },
           {
             "tag": "maint",
+            "release": "minor"
+          },
+          {
+            "tag": "new",
             "release": "minor"
           },
           {
@@ -67,11 +67,24 @@
             "files": [
               "doc/remember.txt"
             ],
-            "from": "^Version: (([v]?[0-9]).+([0-9]).+([0-9]))$",
+            "from": "^(-- )?Version: (([v]?[0-9]).+([0-9]).+([0-9]))$",
             "to": "Version: ${nextRelease.version}",
             "results": [
               {
                 "file": "doc/remember.txt",
+                "hasChanged": true
+              }
+            ]
+          },
+          {
+            "files": [
+              "lua/remember.lua"
+            ],
+            "from": "^-- Version: (([v]?[0-9]).+([0-9]).+([0-9]))$",
+            "to": "-- Version: ${nextRelease.version}",
+            "results": [
+              {
+                "file": "lua/remember.lua",
                 "hasChanged": true
               }
             ]
@@ -98,7 +111,8 @@
           "CHANGELOG.md",
           "README.md",
           "VERSION",
-          "doc/remember.txt"
+          "doc/remember.txt",
+          "lua/remember.lua"
         ],
         "message": "release: v${lastRelease.version || '0.0.0' } → v${nextRelease.version}\n\n${nextRelease.notes}"
       }

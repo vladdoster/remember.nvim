@@ -1,3 +1,15 @@
+## [1.3.1](https://github.com/vladdoster/remember.nvim/compare/v1.3.0...v1.3.1) (2022-06-16)
+
+
+### docs
+
+* remove v prefix from version ([6ac0ee5](https://github.com/vladdoster/remember.nvim/commit/6ac0ee5a853bd01c7075cd1142eb7bdfb22a69ad))
+
+### fix
+
+* sem-rel regex to find version to bump in docs ([8d86d03](https://github.com/vladdoster/remember.nvim/commit/8d86d0315816dfaf74f50f41b98f6d91ab5ddf99))
+* version bump logic for doc.txt ([544c221](https://github.com/vladdoster/remember.nvim/commit/544c2212a37412e7c7270c0a05684237477ec31e))
+
 # [1.3.0](https://github.com/vladdoster/remember.nvim/compare/v1.2.5...v1.3.0) (2022-06-08)
 
 

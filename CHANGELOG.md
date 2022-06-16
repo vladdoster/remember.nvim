@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/vladdoster/remember.nvim/compare/v1.3.1...v1.3.2) (2022-06-16)
+
+
+### fix
+
+* regex to find version to bump in plugin code ([dd8ecf1](https://github.com/vladdoster/remember.nvim/commit/dd8ecf1827b2f2654774a7e3837063d08b5b4aa2))
+
 ## [1.3.1](https://github.com/vladdoster/remember.nvim/compare/v1.3.0...v1.3.1) (2022-06-16)
 
 

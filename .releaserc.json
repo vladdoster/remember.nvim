@@ -1,62 +1,21 @@
 {
-  "repositoryUrl": "https://github.com/vladdoster/remember.nvim",
+  "repositoryUrl": "https://github.com/vladdoster/neovim-configuration",
+  "branches": [
+    "master"
+  ],
   "plugins": [
-    [
-      "@semantic-release/commit-analyzer",
-      {
-        "preset": "eslint",
-        "releaseRules": [
-          {
-            "tag": "build",
-            "release": "patch"
-          },
-          {
-            "tag": "chore",
-            "release": "patch"
-          },
-          {
-            "tag": "docs",
-            "release": "patch"
-          },
-          {
-            "tag": "fix",
-            "release": "patch"
-          },
-          {
-            "tag": "init",
-            "release": "major"
-          },
-          {
-            "tag": "maint",
-            "release": "minor"
-          },
-          {
-            "tag": "new",
-            "release": "minor"
-          },
-          {
-            "tag": "update",
-            "release": "minor"
-          }
-        ]
-      }
-    ],
+    "@semantic-release/commit-analyzer",
     [
       "@google/semantic-release-replace-plugin",
       {
         "replacements": [
           {
             "files": [
-              "README.md",
               "VERSION"
             ],
             "from": "([v]?[0-9]).+([0-9]).+([0-9])",
-            "to": "v${nextRelease.version}",
+            "to": "${nextRelease.version}",
             "results": [
-              {
-                "file": "README.md",
-                "hasChanged": true
-              },
               {
                 "file": "VERSION",
                 "hasChanged": true
@@ -92,12 +51,7 @@
         ]
       }
     ],
-    [
-      "@semantic-release/release-notes-generator",
-      {
-        "preset": "eslint"
-      }
-    ],
+    "@semantic-release/release-notes-generator",
     [
       "@semantic-release/changelog",
       {
@@ -109,12 +63,11 @@
       {
         "assets": [
           "CHANGELOG.md",
-          "README.md",
           "VERSION",
           "doc/remember.txt",
           "lua/remember.lua"
         ],
-        "message": "release: v${lastRelease.version || '0.0.0' } → v${nextRelease.version}\n\n${nextRelease.notes}"
+        "message": "ci: v${lastRelease.version} → v${nextRelease.version}\n\n${nextRelease.notes}"
       }
     ],
     "@semantic-release/github"

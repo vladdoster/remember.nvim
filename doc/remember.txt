@@ -96,6 +96,16 @@ g:remember_open_folds                                  *g:remember_open_folds*
 
         let g:remember_open_folds = true
 
+------------------------------------------------------------------------------
+g:remember_dont_center                                *g:remember_dont_center*
+
+    Disable screen centering when restoring cursor position.
+
+    Default: false                                                           ~
+
+    Example: >
+
+        let g:remember_dont_center = true
 ==============================================================================
  4. CHANGELOG                                             *remember-changelog*
 

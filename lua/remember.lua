@@ -19,6 +19,7 @@ local config = {
   ignore_filetype = { "gitcommit", "gitrebase", "svn", "hgcommit" },
   ignore_buftype = { "quickfix", "nofile", "help" },
   open_folds = true,
+  dont_center = false,
 }
 
 function M.setup(options)
@@ -32,6 +33,10 @@ function M.setup(options)
 
   if options["open_folds"] then
     config["open_folds"] = options["open_folds"]
+  end
+
+  if options["dont_center"] then
+    config["dont_center"] = options["dont_center"]
   end
 end
 
@@ -62,8 +67,9 @@ function set_cursor_position()
   -- then continue
   if row > 0 and row <= api.nvim_buf_line_count(0) then
     -- If the last row is visible within this window, like in a very short
-    -- file, just set the cursor position to the saved position
-    if api.nvim_buf_line_count(0) == fn.line("w$") then
+    -- file, or user requested us not centering the screen, just set the cursor
+    -- position to the saved position
+    if api.nvim_buf_line_count(0) == fn.line("w$") or config["dont_center"] then
       api.nvim_win_set_cursor(0, cursor_position)
 
       -- If we're in the middle of the file, set the cursor position and center

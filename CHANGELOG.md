@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/vladdoster/remember.nvim/compare/v1.3.2...v1.4.0) (2022-12-04)
+
+
+### Features
+
+* 'dont_center' option ([6b49f00](https://github.com/vladdoster/remember.nvim/commit/6b49f006b91ba5b1d413de8174fec55ed934ce72))
+
 ## [1.3.2](https://github.com/vladdoster/remember.nvim/compare/v1.3.1...v1.3.2) (2022-06-16)
 
 

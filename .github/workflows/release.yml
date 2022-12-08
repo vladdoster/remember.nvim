@@ -1,14 +1,18 @@
 name: Release
+
 on:
   push:
-    branches: [master]
+    branches: [main,master]
   workflow_dispatch:
+
 jobs:
+  commit:
+    uses: vladdoster/.github/.github/workflows/commit.yml@main
   lint:
     uses: vladdoster/.github/.github/workflows/lint.yml@main
   release:
     name: release
-    needs: lint
+    needs: [commit,lint]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

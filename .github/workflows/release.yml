@@ -4,15 +4,16 @@ on:
     branches: [master]
   workflow_dispatch:
 jobs:
+  lint:
+    uses: vladdoster/.github/.github/workflows/lint.yml@main
   release:
     name: release
+    needs: lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          cache-dependency-path: '**/.github/workflows/release.yml'
-          cache: 'npm'
           node-version: '16'
       - name: Fetch dependencies
         run: npm install --no-package-lock @semantic-release{/{'changelog','git','exec'},'-plus/docker'} @google/semantic-release-replace-plugin

@@ -2,7 +2,9 @@ name: Release
 
 on:
   push:
-    branches: [main,master]
+    branches:
+      - master
+      - main
   workflow_dispatch:
 
 jobs:
@@ -16,11 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: '0'
       - uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: 16
+          cache: npm
       - name: Fetch dependencies
         run: npm install --no-package-lock @semantic-release{/{'changelog','git','exec'},'-plus/docker'} @google/semantic-release-replace-plugin
       - name: Generate release

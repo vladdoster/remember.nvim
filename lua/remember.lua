@@ -12,6 +12,7 @@ local g = vim.g
 local bo = vim.bo
 local fn = vim.fn
 local api = vim.api
+local cmd = vim.cmd
 
 local M = {}
 
@@ -76,20 +77,20 @@ function set_cursor_position()
       -- the screen
     elseif api.nvim_buf_line_count(0) - row > ((fn.line("w$") - fn.line("w0")) / 2) - 1 then
       api.nvim_win_set_cursor(0, cursor_position)
-      api.nvim_input("zz")
+      cmd("norm! zz")
 
       -- If we're at the end of the screen, set the cursor position and move
       -- the window up by one with C-e. This is to show that we are at the end
       -- of the file. If we did "zz" half the screen would be blank.
     else
       api.nvim_win_set_cursor(0, cursor_position)
-      api.nvim_input("<c-e>")
+      api.nvim_feedkeys(api.nvim_replace_termcodes("<c-e>", true, false, true), "n", false)
     end
   end
 
   -- If the row is within a fold, make the row visible and recenter the screen
   if api.nvim_eval("foldclosed('.')") ~= -1 and config["open_folds"] then
-    api.nvim_input("zvzz")
+    cmd("norm! zvzz")
   end
 end
 

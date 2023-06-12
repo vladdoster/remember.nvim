@@ -1,33 +1,15 @@
 name: Release
 
 on:
-  push:
-    branches:
-      - master
-      - main
   workflow_dispatch:
 
 jobs:
   commit:
-    uses: vladdoster/.github/.github/workflows/commit.yml@main
+    uses: vladdoster/.github/.github/workflows/commit.yml@master
   lint:
-    uses: vladdoster/.github/.github/workflows/lint.yml@main
+    uses: vladdoster/.github/.github/workflows/lint.yml@master
   release:
-    name: release
     needs: [commit,lint]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - name: Fetch dependencies
-        run: npm install --no-package-lock @semantic-release{/{'changelog','git','exec'},'-plus/docker'} @google/semantic-release-replace-plugin
-      - name: Generate release
-        run: npx semantic-release --ci --
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_TOKEN }}
-          GIT_AUTHOR_EMAIL: 'mvdoster@gmail.com'
-          GIT_AUTHOR_NAME: 'Vladislav Doster'
-          GIT_COMMITTER_EMAIL: 'mvdoster@gmail.com'
-          GIT_COMMITTER_NAME: 'Vladislav Doster'
+    uses: vladdoster/.github/.github/workflows/release.yml@master
+    secrets:
+       github-token: ${{ secrets.GITHUB_TOKEN }}

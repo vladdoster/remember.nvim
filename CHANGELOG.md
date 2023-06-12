@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/vladdoster/remember.nvim/compare/v1.4.0...v1.4.1) (2023-06-12)
+
+
+### Bug Fixes
+
+* feed keys in normal mode ([de38e7b](https://github.com/vladdoster/remember.nvim/commit/de38e7b92d38683fef9a33d877de75d3176c24f7))
+
 # [1.4.0](https://github.com/vladdoster/remember.nvim/compare/v1.3.2...v1.4.0) (2022-12-04)
 
 

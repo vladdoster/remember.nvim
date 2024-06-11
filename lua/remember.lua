@@ -17,7 +17,7 @@ local cmd = vim.cmd
 local M = {}
 
 local config = {
-  ignore_filetype = { "gitcommit", "gitrebase", "svn", "hgcommit" },
+  ignore_filetype = { "gitcommit", "gitrebase", "svn", "hgcommit", "dap-repl" },
   ignore_buftype = { "quickfix", "nofile", "help" },
   open_folds = true,
   dont_center = false,

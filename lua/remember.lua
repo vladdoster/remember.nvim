@@ -1,6 +1,6 @@
 --
 -- Author: vladdoster <mvdoster@gmail.com>
--- Version: 1.4.1
+-- Version: 1.5.0
 --
 -- Based on https://github.com/farmergreg/vim-lastplace/
 --

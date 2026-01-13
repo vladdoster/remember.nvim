@@ -1,3 +1,15 @@
+# [1.5.0](https://github.com/vladdoster/remember.nvim/compare/v1.4.1...v1.5.0) (2026-01-13)
+
+
+### Bug Fixes
+
+* exclude dap-repl filetype ([a7f2575](https://github.com/vladdoster/remember.nvim/commit/a7f2575f7c0842c96e42dfb24f51855b82a3fb8b))
+
+
+### Features
+
+* comprehensive Lua testing infrastructure ([7b742bc](https://github.com/vladdoster/remember.nvim/commit/7b742bc3cbafa8afbdcba23673bec287464a81a5)), closes [/#diff-c271155dd62a2995cf2d82c3b924636f7b8de9e4708d17aa6463d929ab52241cR1-R11](https://github.com///issues/diff-c271155dd62a2995cf2d82c3b924636f7b8de9e4708d17aa6463d929ab52241cR1-R11) [/#diff-030b6cdc19ece93e7680ef5791dde5f589f076325937767145efe2c5f230dbdaR1-R15](https://github.com///issues/diff-030b6cdc19ece93e7680ef5791dde5f589f076325937767145efe2c5f230dbdaR1-R15) [/#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5R30-R44](https://github.com///issues/diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5R30-R44) [/#diff-dacac2ebf9792f0d23c0f922a744486ded01901957d5281290925acd89cf83acR1-R103](https://github.com///issues/diff-dacac2ebf9792f0d23c0f922a744486ded01901957d5281290925acd89cf83acR1-R103)
+
 ## [1.4.1](https://github.com/vladdoster/remember.nvim/compare/v1.4.0...v1.4.1) (2023-06-12)
 
 

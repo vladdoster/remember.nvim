@@ -24,6 +24,19 @@
           },
           {
             "files": [
+              "README.md"
+            ],
+            "from": "(([v]?[0-9]).+([0-9]).+([0-9]))",
+            "to": "${nextRelease.version}",
+            "results": [
+              {
+                "file": "README.md",
+                "hasChanged": true
+              }
+            ]
+          },
+          {
+            "files": [
               "doc/remember.txt"
             ],
             "from": "^(-- )?Version: (([v]?[0-9]).+([0-9]).+([0-9]))$",
@@ -63,6 +76,7 @@
       {
         "assets": [
           "CHANGELOG.md",
+          "README.md",
           "VERSION",
           "doc/remember.txt",
           "lua/remember.lua"

@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/vladdoster/remember.nvim/compare/v1.5.0...v1.5.1) (2026-01-13)
+
+
+### Bug Fixes
+
+* update .releaserc.json to include README.md ([1956ea6](https://github.com/vladdoster/remember.nvim/commit/1956ea6b3aa63c4ddc55f2151fc672d58449f377))
+
 # [1.5.0](https://github.com/vladdoster/remember.nvim/compare/v1.4.1...v1.5.0) (2026-01-13)
 
 

@@ -2,7 +2,7 @@
 
 |                            version                             |
 | :------------------------------------------------------------: |
-| [v1.4.0](https://github.com/vladdoster/remember.nvim/releases) |
+| [1.5.1](https://github.com/vladdoster/remember.nvim/releases) |
 
 A port of the Vim plugin [vim-lastplace](https://github.com/farmergreg/vim-lastplace). It uses the same logic as
 `vim-lastplace`, but leverages the Neovim Lua API.

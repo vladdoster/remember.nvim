@@ -1,0 +1,15 @@
+-- Configuration for LuaCov
+
+return {
+  -- Include only lua/ directory in coverage
+  include = {
+    "lua/",
+  },
+  
+  -- Exclude test files and external dependencies
+  exclude = {
+    "tests/",
+    "/home/runner/.luarocks/",
+    "/usr/share/lua/",
+  },
+}

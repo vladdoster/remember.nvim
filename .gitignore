@@ -1,0 +1,9 @@
+# Luarocks
+luarocks/
+
+# Test artifacts
+*.out
+*.log
+
+# Coverage reports
+luacov.*

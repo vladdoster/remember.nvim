@@ -27,6 +27,21 @@ use({ 'vladdoster/remember.nvim', config = [[ require('remember') ]] })
 
 For the full documentation, see [remember.txt](doc/remember.txt).
 
+## Testing
+
+Unit tests are available for the plugin. To run tests:
+
+1. Install `luarocks` package manager
+2. Install test dependencies: `make test-install`
+3. Run tests: `make test`
+4. Run tests with coverage: `make test-coverage`
+
+For more details, see [tests/README.md](tests/README.md).
+
+### CI/CD
+
+Tests run automatically on pull requests via GitHub Actions, with coverage reports posted as PR comments.
+
 ## Issues
 
 If you believe you've found a bug or shortcoming in remember.nvim that is

@@ -1,12 +1,10 @@
-name: Unit Tests
+name: CI
 
 on:
   pull_request_target:
-    types:
-      - opened
-      - synchronize
-    branches:
-      - 'master'
+    types: [assigned, opened, synchronize, reopened]
+    branches: [develop, master]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -15,10 +13,11 @@ permissions:
 
 jobs:
   test:
+    name: Unit Tests
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout code
+      - name: Checkout ${{github.repository}}
         uses: actions/checkout@v4
       
       - name: Install Lua and LuaRocks
@@ -68,7 +67,7 @@ jobs:
           fi
       
       - name: Comment PR with coverage
-        if: github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request_target'
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}

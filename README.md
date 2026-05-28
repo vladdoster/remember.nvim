@@ -23,6 +23,21 @@ Uses new Neovim `0.7` Lua `vim.nvim.create_autocmd` function.
 use({ 'vladdoster/remember.nvim', config = [[ require('remember') ]] })
 ```
 
+### Lazy.nvim
+
+```Lua
+-- Using Lazy.nvim
+{
+  'vladdoster/remember.nvim',
+  opts = {},
+}
+```
+
+### vim.pack
+
+vim.pack.add({'https://github.com/vladdoster/remember.nvim'})
+require("remember").setup({})
+
 For the full documentation, see [remember.txt](doc/remember.txt).
 
 ## Testing

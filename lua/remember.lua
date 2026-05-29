@@ -7,6 +7,7 @@
 -- This work is licensed under the terms of the MIT license.
 -- For a copy, see <https://opensource.org/licenses/MIT>.
 --
+
 local g = vim.g
 local bo = vim.bo
 local fn = vim.fn
@@ -16,19 +17,19 @@ local cmd = vim.cmd
 local M = {}
 
 local config = {
-  ignore_buftype = { "quickfix", "nofile", "help" },
   ignore_filetype = { "gitcommit", "gitrebase", "svn", "hgcommit", "dap-repl" },
+  ignore_buftype = { "quickfix", "nofile", "help" },
   open_folds = true,
   dont_center = false,
 }
 
 function M.setup(options)
-  if options["ignore_buftype"] then
-    config["ignore_buftype"] = options["ignore_buftype"]
-  end
-
   if options["ignore_filetype"] then
     config["ignore_filetype"] = options["ignore_filetype"]
+  end
+
+  if options["ignore_buftype"] then
+    config["ignore_buftype"] = options["ignore_buftype"]
   end
 
   if options["open_folds"] then

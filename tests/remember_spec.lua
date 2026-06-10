@@ -46,12 +46,20 @@ describe("remember.nvim", function()
 
     mock_g = {}
 
+    mock_notify = spy.new(function() end)
+
     mock_vim = {
       api = mock_api,
       fn = mock_fn,
       cmd = mock_cmd,
       bo = mock_bo,
       g = mock_g,
+      notify = mock_notify,
+      log = {
+        levels = {
+          ERROR = 1,
+        },
+      },
     }
 
     -- Mock the global vim object

@@ -32,11 +32,11 @@ function M.setup(options)
     config["ignore_buftype"] = options["ignore_buftype"]
   end
 
-  if options["open_folds"] then
+  if options["open_folds"] ~= nil then
     config["open_folds"] = options["open_folds"]
   end
 
-  if options["dont_center"] then
+  if options["dont_center"] ~= nil then
     config["dont_center"] = options["dont_center"]
   end
 end

@@ -1,7 +1,7 @@
 # remember.nvim
 
-|                            version                             |
-| :------------------------------------------------------------: |
+|                            version                            |
+| :-----------------------------------------------------------: |
 | [1.5.1](https://github.com/vladdoster/remember.nvim/releases) |
 
 A port of the Vim plugin [vim-lastplace](https://github.com/farmergreg/vim-lastplace). It uses the same logic as
@@ -35,8 +35,7 @@ use({ 'vladdoster/remember.nvim', config = [[ require('remember') ]] })
 
 ### vim.pack
 
-vim.pack.add({'https://github.com/vladdoster/remember.nvim'})
-require("remember").setup({})
+vim.pack.add({'https://github.com/vladdoster/remember.nvim'}) require("remember").setup({})
 
 For the full documentation, see [remember.txt](doc/remember.txt).
 

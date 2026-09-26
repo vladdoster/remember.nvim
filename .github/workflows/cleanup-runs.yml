@@ -7,6 +7,7 @@ on:
 
 jobs:
   workflow-cleanup:
+    name: Clean
     uses: vladdoster/.github/.github/workflows/cleanup.yml@master
     secrets:
        github-token: ${{ secrets.GITHUB_TOKEN }}

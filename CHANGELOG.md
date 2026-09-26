@@ -1,3 +1,11 @@
+## [1.5.2](https://github.com/vladdoster/remember.nvim/compare/v1.5.1...v1.5.2) (2026-09-26)
+
+
+### Bug Fixes
+
+* **remember:** report restore errors once, off the autocmd ([46e8873](https://github.com/vladdoster/remember.nvim/commit/46e88734867e17a0ad053aca5508b877772cecd6)), closes [#10](https://github.com/vladdoster/remember.nvim/issues/10)
+* **setup:** accept false for open_folds and dont_center ([53ea004](https://github.com/vladdoster/remember.nvim/commit/53ea0040fb38342331571bb805876459042e1a3d))
+
 ## [1.5.1](https://github.com/vladdoster/remember.nvim/compare/v1.5.0...v1.5.1) (2026-01-13)
 
 

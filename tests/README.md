@@ -72,8 +72,8 @@ The coverage configuration is in `.luacov` and is set to only include `lua/` dir
   - `setup()` function - configuration options
   - `set_cursor_position()` function - cursor restoration logic
   - autocmd registration
-- `tests/headless_spec.lua` - Integration tests that run the plugin in a real headless `nvim`.
-  They are marked pending when `nvim` is not on `PATH`; CI installs Neovim so they always run there.
+- `tests/headless_spec.lua` - Integration tests that run the plugin in a real headless `nvim`. They are marked pending
+  when `nvim` is not on `PATH`; CI installs Neovim so they always run there.
 
 ## Writing New Tests
 

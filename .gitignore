@@ -1,6 +1,9 @@
 # Luarocks
 luarocks/
 
+# macOS
+.DS_Store
+
 # Test artifacts
 *.out
 *.log
